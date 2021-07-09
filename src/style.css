@@ -40,6 +40,41 @@ body {
     margin-bottom: 0;
     }
 
+.modal {
+    position: absolute;
+    top 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+&
+_contents {
+    background-color: white;
+    padding: 2rem 4rem;
+}
+
+button {
+    width: 100%;
+    padding: .5rem;
+    background-color: $ primary;
+    border: none;
+    color: white;
+    transition: all .3s ease;
+    cursor pointer;
+
+&
+:hover {
+    background-color: $ primary-darker;
+
+}
+
+
+}
+
+}
+
 @tailwind base;
 @tailwind components;
 
@@ -49,4 +84,3 @@ body {
 --color-primary: #009579;
 
 
-}

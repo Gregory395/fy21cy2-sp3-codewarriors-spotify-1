@@ -188050,4 +188050,49 @@ video {
   .\32xl\:ease-in-out {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-}
+
+  .modal {
+    background-color: rgba(0,0,0,0.8)
+    position: absolute;
+    top 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    class=--hidden {
+    display:none;
+    }
+
+    &_close-bar {
+        display:flex;
+        justify-right: flex-end;
+        margin-right: -2rem;
+        margin-top: -1rem;
+        cursor: pointer;
+    }
+
+
+    class=_contents {
+         background-color: white;
+         padding: 2rem 4rem;
+     }
+     button {
+         width: 100%;
+         padding: .5rem;
+         background-color: $primary;
+         border: none;
+         color: white;
+         transition: all .3s ease;
+     cursor: pointer;
+         &:hover {
+            background-color: $primary-darker;
+
+  }
+
+
+
+
+  }
+  }
+
